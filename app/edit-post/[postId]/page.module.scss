@@ -1,7 +1,27 @@
-.main {
+.edit {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   padding: 40px 0;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  textarea {
+    height: 80px;
+    resize: none;
+    background-color: transparent;
+    border: 1px solid #49a09d;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+
+    &::placeholder {
+      color: #A5A8AD;
+    }
+  }
 }

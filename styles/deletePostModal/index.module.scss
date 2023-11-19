@@ -1,0 +1,29 @@
+.delete_modal {
+  padding: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #D9D9D9;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+
+  &__text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+
+    &__delete {
+      margin-right: 10px;
+      background-color: #FF4747;
+    }
+  }
+}
