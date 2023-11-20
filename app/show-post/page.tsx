@@ -3,7 +3,12 @@ import { useStore } from 'effector-react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { MutableRefObject, useEffect, useMemo, useRef, useState } from 'react'
-import { $posts, filterPosts, loadPosts, sortPosts } from '@/context/posts'
+import { 
+  $posts,
+  // filterPosts, 
+  loadPosts, 
+  sortPosts 
+} from '@/context/posts'
 import { getPostsFx } from '@/api/posts'
 import skeletonStyles from './page.module.scss'
 import styles from './page.module.scss'
@@ -32,7 +37,7 @@ export default function Home() {
       return
     }
 
-    filterPosts(searchInputValue)
+    // filterPosts(searchInputValue)
   }, [searchInputValue])
 
   const handleSearchPosts = (e: React.ChangeEvent<HTMLInputElement>) => {
